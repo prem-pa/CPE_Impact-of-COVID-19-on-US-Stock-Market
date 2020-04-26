@@ -1,0 +1,41 @@
+##    
+##    for j in range(len(final_data)):
+##        final_data.columns = final_data.columns.str.replace(final_data[j], c_symbols[i] + '_' + final_data[j])
+##    
+##    #Adding stock name in the column of the datafram (data)
+##    no_of_rows = len(data.index)
+##    
+##    for j in range(no_of_rows):    
+##        current_symbol = c_symbols[i] * no_of_rows
+##        data = data.reset_index()
+##        data.insert(0, "Company", current_symbol, True)
+#        
+#    #Appened data
+#    #final_data = final_data.append(data, ignore_index=True)
+#    
+#    #data_rows = len(final_data.index)
+#    #final_data_rows = data_rows + no_of_rows
+#    
+#
+###adding a column in a datafram test 1 for one stock
+##data = yf.download('AAP','2018-01-01',datetoday)
+##
+###list generator for company name
+##no_of_rows = len(data.index)
+##current_symbol = ['AAP'] * no_of_rows
+##data = data.reset_index()
+##data.insert(0, "Company", current_symbol, True)    
+#
+##test2
+#final_data = yf.download('AAP','2018-01-01', datetoday)
+#len(final_data)
+#
+#temp = '_AAP'
+#
+#
+#final_data = final_data.rename({"Company":"Company" + c_symbols[i],"Date":"Date" + c_symbols[i],"Open":"Open" + c_symbols[i],"High":"Hight" + c_symbols[i],"Low":"Low" + c_symbols[i],"Close":"Close" + c_symbols[i],"Adj Close":"Adj Close" + c_symbols[i],"Volume":"Volume" + c_symbols[i]}, axis='columns') 
+#
+#for j in range(len(final_data)):
+#    final_data.columns = final_data.columns.str.replace(final_data[j], 'AAP_' + final_data[j])
+#
+#
